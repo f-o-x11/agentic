@@ -103,7 +103,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "title": "Run Id"
+              "title": "Thread Id"
             }
           },
           {
@@ -133,7 +133,7 @@
                 "schema": {
                   "type": "object",
                   "additionalProperties": true,
-                  "title": "Response Handle Oauth Callback  Agent Name  Oauth  Run Id   Tool Name  Get"
+                  "title": "Response Handle Oauth Callback  Agent Name  Oauth  Thread Id   Tool Name  Get"
                 }
               }
             }
@@ -470,11 +470,11 @@
         }
       }
     },
-    "/{agent_name}/runs": {
+    "/{agent_name}/threads": {
       "get": {
-        "summary": "Get Runs",
-        "description": "Get all runs for this agent",
-        "operationId": "get_runs__agent_name__runs_get",
+        "summary": "Get Threads",
+        "description": "Get all threads for this agent",
+        "operationId": "get_threads__agent_name__threads_get",
         "parameters": [
           {
             "name": "agent_name",
@@ -524,11 +524,11 @@
         }
       }
     },
-    "/{agent_name}/runs/{thread_id}/logs": {
+    "/{agent_name}/threads/{thread_id}/logs": {
       "get": {
-        "summary": "Get Run Logs",
-        "description": "Get logs for a specific run",
-        "operationId": "get_run_logs__agent_name__runs__thread_id__logs_get",
+        "summary": "Get Thread Logs",
+        "description": "Get logs for a specific thread",
+        "operationId": "get_thread_logs__agent_name__threads__thread_id__logs_get",
         "parameters": [
           {
             "name": "thread_id",
@@ -536,7 +536,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "title": "Run Id"
+              "title": "Thread Id"
             }
           },
           {
@@ -599,7 +599,7 @@
             "required": true,
             "schema": {
               "type": "string",
-              "title": "Run Id"
+              "title": "Thread Id"
             }
           },
           {
@@ -755,7 +755,7 @@
                 "type": "null"
               }
             ],
-            "title": "Run Id"
+            "title": "Thread Id"
           }
         },
         "type": "object",
@@ -793,7 +793,7 @@
                 "type": "null"
               }
             ],
-            "title": "Run Id"
+            "title": "Thread Id"
           }
         },
         "type": "object",
